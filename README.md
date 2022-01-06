@@ -74,7 +74,7 @@ run_mode = "client"
 #mtu = 1500  #可选 默认为1500
 
 [server]
-bind_addr = "10.67.15.100:1234" #服务器ip地址+端口
+bind_addr = "192.168.1.100:1234" #服务器ip地址+端口
 
 [[nics]]
 ifname = "tap0"
@@ -103,7 +103,7 @@ run_mode = "server"
 #client_tap_mode = "macvtap" #tap or macvtap，使用远程下发的时候客户端运行的tap模式，这个会覆盖客户端原有的配置
 
 [server]
-bind_addr = "10.67.15.100:1234" #服务器ip地址+端口
+bind_addr = "192.168.1.100:1234" #服务器ip地址+端口
 #script_path = "/tmp/tap_client.sh" #假如使用服务器下发配置模式，这个脚本将先在客户端上执行，然后根据server下发配置启动tap监听。假如脚本执行返回不等于0，客户端出错退出。 
 
 [[nics]]
