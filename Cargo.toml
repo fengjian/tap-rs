@@ -1,0 +1,38 @@
+[package]
+name = "tap-rs"
+version = "0.1.0"
+authors = ["fengjian <hello@gnu.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies.cc]
+version = "1.0.52"
+
+
+
+[dependencies]
+clap = "2"
+toml = "0.5.6"
+libc = "0.2.69"
+serde = { version = "1.0", features = ["derive"] }
+smol = "0.1"
+pnet = "0.26.0"
+rust-crypto = "^0.2"
+env_logger = "0.7.1"
+log = "0.4.0"
+sysinfo = "0.13.0"
+daemonize = "0.4.1"
+
+
+[dependencies.async-std]
+version = "1.5.0"
+features = ["unstable"]
+
+
+
+[profile.release]
+opt-level = 'z'  # Optimize for size
+lto = true
+codegen-units = 1
+panic = 'abort'
