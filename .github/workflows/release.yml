@@ -1,4 +1,5 @@
 # release.yml
+name: release
 
 on:
   release:
