@@ -3,6 +3,7 @@
 
 # 基本介绍
 
+[![build](https://github.com/fengjian/tap-rs/actions/workflows/rust.yml/badge.svg)](https://github.com/fengjian/tap-rs/actions/workflows/rust.yml)
 
 tap-rs 是一个使用Rust语言编写的Linux下的基于macvtap的二层包转发程序
 它可以将多个本地的虚拟网卡流量完全映射到多个远端的网卡上，既本地和远端有完全一样的网卡，有着同样的ip和mac地址，访问本地如同访问远端。
