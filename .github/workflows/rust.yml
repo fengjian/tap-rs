@@ -20,6 +20,8 @@ jobs:
       with:
         version: latest
         platform: x64
+    - name: RM lld
+      run: rm -rf .cargo
     - name: Build
       run: cargo build --verbose
     - name: Run tests
