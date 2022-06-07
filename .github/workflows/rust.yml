@@ -17,11 +17,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: egor-tensin/setup-gcc@v1
-      with:
-        version: latest
-        platform: x64
-    - name: RM lld
-      run: rm -rf .cargo
     - name: Build
       run: cargo build --verbose
     - name: Run tests
