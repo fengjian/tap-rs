@@ -42,8 +42,6 @@
 	"features": {
 		"docker-from-docker": "latest",
 		"git": "latest",
-		"git-lfs": "latest",
-		"github-cli": "latest",
 		"sshd": "latest",
 		"python": "latest"
 	}
